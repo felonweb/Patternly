@@ -1,0 +1,79 @@
+:root {
+    --p: #58C5C3;
+    --pp: #2a8b8a;
+    --a: #61C6BF;
+    --t: #6FC9BE;
+    --t: #7DCBB9;
+    --e: #8FCDB4;
+    --r: #A1CFB3;
+    --n: #B2CEAF;
+    --l: #C4CEA8;
+    --y: #D4CFA5;
+    --yyy: #9c9345;
+    --yy: #d9d7c1;
+    outline: none;
+}
+@font-face {
+    font-family: "vazir light";
+    src: url(Vazir-Light.ttf) format(truetype);
+}
+body {
+    font-family:"vazir light";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.four {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: site;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out
+}
+.title {
+    margin-top: 150px;
+    margin-bottom: -50px;
+  color: var(--pp);
+} 
+.img {
+    margin-top: 50px;
+    margin-bottom: -100px;
+}
+.text {
+    padding: 5px;
+   text-decoration: none;
+   color: var(--y);
+   transition: all 500ms;
+}
+/* هاور */
+.text:hover {
+    background-color: var(--pp);
+    border-radius: 10px;
+}
+/* انمیشن */
+@keyframes site {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+/* واکنش پذیری */
+@media  screen and (max-width: 800px) {
+    .title {
+        font-size: 18px;
+        margin-top: 200px;
+    }
+    .text {
+        font-size: 18px;
+    }
+    .img {
+        width: 90%;
+        margin-bottom: -50px;
+    }
+}

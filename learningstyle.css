@@ -1,0 +1,352 @@
+:root {
+    --p: #58C5C3;
+    --pp: #2a8b8a;
+    --a: #61C6BF;
+    --t: #6FC9BE;
+    --t: #7DCBB9;
+    --e: #8FCDB4;
+    --r: #A1CFB3;
+    --n: #B2CEAF;
+    --l: #C4CEA8;
+    --y: #D4CFA5;
+    --yyy: #9c9345;
+    --yy: #d9d7c1;
+    outline: none;
+}
+@font-face {
+    font-family: "vazir light";
+    src: url(Vazir-Light.ttf) format(truetype);
+}
+body {
+    font-family:"vazir light";
+}
+/* استایل های هدر */
+header {
+    margin-top: -8px;
+    width:99% ;
+    height: 90px;
+    border-bottom: 2px solid #D4CFA5 ;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    animation-name: site;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out
+}
+.icon__Logo {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-right: 15px;
+}
+.logo {
+    width: 130px;
+    height: 55px; 
+    opacity: 0;
+    animation-name: logo;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    opacity: 0;
+    animation-name: logo;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+/* استایل های بدنه */
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    animation-name: site;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+.header__main {
+    padding-top: 100px;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+}
+.imgabout2, .imgabout{
+ width: 400px;
+}
+.title__text ,.title__text2, .title__text3 {
+    padding-right: 20px;
+    width: 70%;
+}
+.title ,.title2 ,.title3, .title4 ,.title5, .title6 {
+    color: var(--pp);
+}
+.text ,.text2 ,.text3 ,.text4 ,.text5, .text6 {
+    color: var(--yyy);
+    line-height: 30px;
+}
+.main__footer {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: start;
+}
+.main__main {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+}
+/* استایل های فوتر */
+footer {
+    width: 101%;
+    background-image: linear-gradient(45deg ,var(--yy), var(--y));
+    height: 250px;
+    margin-bottom: -10px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    transition: opacity 0.1 linear;
+}
+.link__footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.links__footer {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    margin-top: 15px;
+}
+.link__footer2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.links__footer2 {
+    margin-top: 10px;
+    color: black;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+   }
+.icon__footer {
+    width: 30px;
+}
+.insta {
+    width: 33px;
+}
+.footer__center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 70px;
+}
+.text__footer {
+    font-size: 18px;
+}
+/* انیمیشن هدر */
+@keyframes logo {
+    0% {
+       transform: translatey(-15px); 
+       opacity: 0;
+    }
+    40% {
+        opacity: 1 ;
+       } 
+       60% {
+        opacity: 1 ;
+       } 
+    100% {
+     transform: translatey(15px);
+     opacity: 0 ;
+    } 
+}
+/* انیمیشن های بدنه */
+@keyframes site {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+/* واکنش پذیری */
+@media  screen and (max-width: 1470px) {
+/* واکنش پذیری بدنه */
+    .header__main {
+        height: 600px;
+        padding-top: 100px;
+    }
+}
+@media  screen and (max-width: 1185px) {
+/* واکنش پذیری بدنه */
+    .header__main {
+        height: 750px;
+        padding-top: 80px;
+    }
+    .main__footer {
+        height: 500px;
+    }
+}
+@media  screen and (max-width: 1076px) {
+/* واکنش پذیری بدنه */
+    .header__main {
+        height: 600px ;
+    }
+    .title ,.title2 ,.title3, .title4 ,.title5, .title6 {
+        font-size: 22px;
+    }
+   
+    .footer__center {
+        font-size: 12px;
+    }
+    .text__footer {
+        font-size: 14px;
+    }
+}
+@media  screen and (max-width: 972px) {
+/* واکنش پذیری هدر */
+    header {
+    width:98% ;
+    }
+/* واکنش پذیری بدنه */
+    .header__main {
+        height: 750px ;
+    }
+    .main__main {
+        height: 500px;
+    }
+    .main__footer {
+        height: 600px;
+    }
+}
+@media  screen and (max-width: 880px) {
+/* واکنش پذیری بدنه */
+    .header__main {
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        height: 1200px ;
+    }
+    .main__main {
+        justify-content: center;
+        height: 500px;
+    }
+    .main__footer {
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        height: 900px;
+    }
+}
+@media  screen and (max-width: 850px) {
+/* واکنش پذیری فقط فوتر */
+    .links__footer {
+        font-size: 14px;
+    }
+    .links__footer2 {
+        font-size: 14px;
+    }
+    .icon__footer {
+        width: 25px;
+    }
+    .insta {
+        width: 28px;
+    }
+}
+@media  screen and (max-width: 780px) {
+/* واکنش پذیری بدنه */
+    .text ,.text2 ,.text3 ,.text4 ,.text5, .text6 {
+       font-size: 14px;
+    }
+    .header__main {
+        height: 1250px ;
+    }
+    .main__main {
+        height: 500px;
+    }
+    .main__footer {
+        height: 900px;
+    }
+}
+@media  screen and (max-width: 670px) {
+/* واکنش پذیری بدنه */
+    .text ,.text2 ,.text3 ,.text4 ,.text5, .text6 {
+       font-size: 12px;
+    }
+    .title ,.title2 ,.title3, .title4 ,.title5, .title6 {
+        font-size: 20px;
+    }
+    .header__main {
+        height: 1300px ;
+    }
+    .main__main {
+        height: 500px;
+    }
+    .main__footer {
+        height: 900px;
+    }
+}
+@media  screen and (max-width: 560px) {
+/* واکنش پذیری هدر */
+    header {
+        width: 96vw;
+    }
+/* واکنش پذیری بدنه */
+    .footer__center {
+        font-size: 8px;
+    }
+    .text__footer {
+        font-size: 12px;
+    }
+    .header__main {
+        height: 1350px ;
+    }
+    .main__main {
+        height: 550px;
+    }
+    .main__footer {
+        height: 1100px;
+    }
+    .imgabout {
+        margin-right: 30px;
+        width: 80%;
+    }
+    .imgabout2 {
+        margin-right: 30px;
+
+        width: 80%;
+    }
+}
+@media  screen and (max-width: 440px) {
+/* واکنش پذیری فقط فوتر */
+    .footer__center {
+        font-size: 6px;
+    }
+    .text__footer {
+        font-size: 10px;
+    }
+    .main__main {
+        height: 750px;
+    }
+}
