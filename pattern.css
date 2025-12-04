@@ -132,11 +132,12 @@ main {
      width: 100%;
  }
  .img1 {
+     width: 20%;
      display: flex;
      justify-content: end;
  }
  .img {
-     width: 50%;
+     width: 100%;
  }
  ol {
     color: var(--yyy);
@@ -236,6 +237,10 @@ footer {
     .title__text {
         font-size: 22px;
     }
+    .img1 {
+        width: 30%;
+        height: 70%;
+    }
     .titletext {
         width: 100%;
     }
@@ -249,8 +254,7 @@ footer {
         height: 500px;
     }
     .img1 {
-        height: 60%;
-        width: 80%;
+        width: 40%;
     }
     .footer__center {
         font-size: 12px;
@@ -354,12 +358,6 @@ footer {
 }
 @media  screen and (max-width: 440px) {
 /* واکنش پذیری بدنه */
-    .img1 {
-        height: 30%;;
-      }
-      .img {
-        width: 50%;
-    }
     .footer__center {
         font-size: 6px;
     }
@@ -375,4 +373,5 @@ footer {
       }
 
 }
+
 
