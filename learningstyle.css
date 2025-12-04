@@ -16,6 +16,7 @@
 @font-face {
     font-family: "vazir light";
     src: url(Vazir-Light.woff) format(woff);
+    src: url(Vazir-Light.ttf) format(truetype);
 }
 body {
     font-family:"vazir light";
@@ -351,3 +352,4 @@ footer {
     }
 
 }
+
